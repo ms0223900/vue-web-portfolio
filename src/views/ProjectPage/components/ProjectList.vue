@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="project-list-wrapper">
     <ProjectItem
       v-for="(singleProjectData, i) in projectListData"
       :key="i"
@@ -26,5 +26,7 @@ export default {
 </script>
 
 <style>
-
+  .project-list-wrapper {
+    display: flex;
+  }
 </style>

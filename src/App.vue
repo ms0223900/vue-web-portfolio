@@ -3,7 +3,7 @@
     <div id="nav">
       <NavBar />
     </div>
-    <router-view/>
+    <router-view class="app-wrapper"/>
   </div>
 </template>
 
@@ -17,3 +17,9 @@ export default {
   },
 };
 </script>
+<style>
+  .app-wrapper {
+    margin: auto;
+    max-width: 1080px;
+  }
+</style>

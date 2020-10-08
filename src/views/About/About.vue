@@ -14,7 +14,7 @@ import Vue from 'vue';
 import VueMarkdown from 'vue-markdown';
 import about from '@/static/about';
 
-console.log(about);
+// console.log(about);
 
 Vue.use(VueMarkdown);
 
