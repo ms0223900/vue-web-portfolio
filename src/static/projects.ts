@@ -68,7 +68,7 @@ const projectListData: SingleProjectData[] = [
   {
     title: 'Test Battle',
     introduction: '自己建立試卷並考試!',
-    link: 'https://ms0223900.github.io/testBattle/dist/',
+    link: 'https://ms0223900.github.io/test-battle/',
     image: {
       name: '',
       src: allImages['test-battle'].src,
