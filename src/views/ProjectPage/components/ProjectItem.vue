@@ -1,9 +1,7 @@
 <template>
   <div class="col-sm-12 col-md-6 col-lg-3 wrapper">
-    <a
-      v-show="!!singleProjectData.link"
+    <LinkBlock
       :href="singleProjectData.link"
-      target="_blank"
     />
     <div class="project-item--wrapper">
       <div
@@ -23,6 +21,8 @@
 </template>
 
 <script>
+import LinkBlock from '@/components/LinkBlock.vue';
+
 export default {
   name: 'ProjectItem',
   data() {
@@ -41,19 +41,16 @@ export default {
       introduction: String,
     },
   },
+  components: {
+    LinkBlock,
+  },
 };
 </script>
 <style lang="scss" scoped>
   .wrapper {
+    position: relative;
     padding: 8px;
     box-sizing: border-box;
-    a {
-      position: absolute;
-      left: 0px;
-      right: 0px;
-      top: 0px;
-      bottom: 0px;
-    }
   }
   .project-item--wrapper {
     display: flex;

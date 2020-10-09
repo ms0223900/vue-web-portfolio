@@ -7,3 +7,8 @@ export type ProjectKeys =
   'react-games' |
   'kabu-prediction' |
   'chick-shooting-game'
+
+export type OtherLinkKeys =
+  'medium' |
+  'git-hub' |
+  'hack-md'

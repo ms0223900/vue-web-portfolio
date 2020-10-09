@@ -1,4 +1,4 @@
-import projectImages from './project-images';
+import allImages from './all-images';
 
 export interface SingleProjectData {
   title: string;
@@ -17,7 +17,7 @@ const projectListData: SingleProjectData[] = [
     link: 'https://citybus.taichung.gov.tw/ebus',
     image: {
       name: '',
-      src: projectImages['ibus-tc'].src,
+      src: allImages['ibus-tc'].src,
     },
   },
   {
@@ -26,7 +26,7 @@ const projectListData: SingleProjectData[] = [
     link: 'https://ibus.tbkc.gov.tw/ibus',
     image: {
       name: '',
-      src: projectImages['ibus-ks'].src,
+      src: allImages['ibus-ks'].src,
     },
   },
   {
@@ -35,7 +35,7 @@ const projectListData: SingleProjectData[] = [
     link: 'https://github.com/ms0223900/bullet-note',
     image: {
       name: '',
-      src: projectImages['bullet-note'].src,
+      src: allImages['bullet-note'].src,
     },
   },
   {
@@ -44,7 +44,7 @@ const projectListData: SingleProjectData[] = [
     link: '',
     image: {
       name: '',
-      src: projectImages['storybook-theme-color-addon'].src,
+      src: allImages['storybook-theme-color-addon'].src,
     },
   },
   {
@@ -53,7 +53,7 @@ const projectListData: SingleProjectData[] = [
     link: 'https://ms0223900.github.io/react-custom-components/storybook-static/?path=/story/custom-components--jewel-game',
     image: {
       name: '',
-      src: projectImages['react-games'].src,
+      src: allImages['react-games'].src,
     },
   },
   {
@@ -62,7 +62,7 @@ const projectListData: SingleProjectData[] = [
     link: 'https://ms0223900.github.io/mini-games/dist/',
     image: {
       name: '',
-      src: projectImages['chick-shooting-game'].src,
+      src: allImages['chick-shooting-game'].src,
     },
   },
   {
@@ -71,7 +71,7 @@ const projectListData: SingleProjectData[] = [
     link: 'https://ms0223900.github.io/testBattle/dist/',
     image: {
       name: '',
-      src: projectImages['test-battle'].src,
+      src: allImages['test-battle'].src,
     },
   },
   {
@@ -80,7 +80,7 @@ const projectListData: SingleProjectData[] = [
     link: 'https://ms0223900.github.io/acnh-kabu-prediction/',
     image: {
       name: '',
-      src: projectImages['kabu-prediction'].src,
+      src: allImages['kabu-prediction'].src,
     },
   },
 ];

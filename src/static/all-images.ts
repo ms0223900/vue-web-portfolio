@@ -1,12 +1,12 @@
-import { ProjectKeys } from './types';
+import { OtherLinkKeys, ProjectKeys } from './types';
 
-export interface SingleProjectImage {
+export interface SingleImage {
   name: string;
   src: string;
 }
 
-const projectImages: {
-  [x in ProjectKeys]: SingleProjectImage;
+const allImages: {
+  [x in (ProjectKeys | OtherLinkKeys)]: SingleImage;
 } = {
   'ibus-ks': {
     name: 'ibus-ks',
@@ -38,8 +38,22 @@ const projectImages: {
   },
   'chick-shooting-game': {
     name: 'chick-shooting-game',
-    src: 'https://im2.ezgif.com/tmp/ezgif-2-1eb790cc931a.gif',
+    src: './assets/images/project-images/chick-shooting-game.gif',
+  },
+
+  medium: {
+    name: 'medium',
+    src: './assets/images/icons/medium-icon.png',
+  },
+
+  'git-hub': {
+    name: 'git-hub',
+    src: './assets/images/icons/github-logo.png',
+  },
+  'hack-md': {
+    name: 'hack-md',
+    src: './assets/images/icons/hack-md-logo.png',
   },
 };
 
-export default projectImages;
+export default allImages;
