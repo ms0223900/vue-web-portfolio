@@ -15,13 +15,13 @@ const otherLinks: SingleOtherLink[] = [
     iconSrc: allImages['git-hub'].src,
   },
   {
-    title: 'Medium文章',
+    title: 'Medium',
     intro: '紀錄技術文章、讀書心得和各種分享',
     link: 'https://medium.com/@ms0223900',
     iconSrc: allImages.medium.src,
   },
   {
-    title: 'HackMD文章',
+    title: 'HackMD',
     link: 'https://hackmd.io/@PenguinCho',
     intro: '分享一些比較雜項、隨筆的紀錄',
     iconSrc: allImages['hack-md'].src,
