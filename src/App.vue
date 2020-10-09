@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="app-wrapper">
     <div id="nav">
       <NavBar />
     </div>
@@ -19,6 +19,7 @@ export default {
 </script>
 <style>
   .app-wrapper {
+    padding: 16px;
     margin: auto;
     max-width: 1080px;
   }
