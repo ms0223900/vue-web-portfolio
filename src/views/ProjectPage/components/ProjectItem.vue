@@ -51,6 +51,13 @@ export default {
     position: relative;
     padding: 8px;
     box-sizing: border-box;
+    transition: 0.2s;
+    &:hover {
+      .project-item--wrapper {
+        transition: 0.2s;
+        box-shadow: 0px 0px 14px #666;
+      }
+    }
   }
   .project-item--wrapper {
     display: flex;
@@ -60,7 +67,9 @@ export default {
     /* padding: 8px; */
     border-radius: 8px;
     overflow: hidden;
+    // border: 2px solid #a00;
     box-shadow: 0px 0px 10px #aaa;
+    transition: 0.2s;
   }
   .project-item--image {
     /* min-height: 180px; */

@@ -1,3 +1,11 @@
+:root {
+  --primary: rgb(5, 90, 129);
+}
+
 * {
   // outline: 1px solid #c00;
+}
+
+.router-link-exact-active {
+  // border-bottom: 3px solid var(--primary);
 }

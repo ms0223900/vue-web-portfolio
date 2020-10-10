@@ -44,6 +44,8 @@ export default {
 <style lang="scss" scoped>
   .wrapper {
     position: relative;
+    padding: 12px;
+    border-radius: 8px;
     img {
       width: 30px;
       height: 30px;
@@ -53,6 +55,14 @@ export default {
       padding: 0px;
       margin: 0px;
       padding-left: 8px;
+    }
+    p {
+      margin: 0px;
+    }
+    transition: 0.2s;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.07);
+      transition: 0.2s;
     }
   }
   .link-wrapper {

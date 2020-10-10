@@ -1,5 +1,8 @@
 <template>
-  <router-link :to="link">
+  <router-link
+    :to="link"
+    :class="['navbar-link', { active, }]"
+  >
     {{ title }}
   </router-link>
 </template>
@@ -15,9 +18,22 @@ export default {
       type: String,
     },
   },
+  computed: {
+    active() {
+      console.log(this.$route.path, this.link);
+      return this.$route.path === this.link;
+    },
+  },
 };
 </script>
-
-<style>
-
+<style lang="scss">
+  .navbar-link {
+    padding: 8px;
+    padding-bottom: 4px;
+    color: var(--primary);
+    &.active {
+      font-weight: 800;
+      // border-bottom: 2px solid var(--primary);
+    }
+  }
 </style>
