@@ -1,12 +1,14 @@
-import { OtherLinkKeys, ProjectKeys } from './types';
+import { OtherLinkKeys, ProfileKeys, ProjectKeys } from './types';
 
 export interface SingleImage {
   name: string;
   src: string;
 }
 
+type ImageKeys = ProjectKeys | OtherLinkKeys | ProfileKeys
+
 const allImages: {
-  [x in (ProjectKeys | OtherLinkKeys)]: SingleImage;
+  [x in ImageKeys]: SingleImage;
 } = {
   'ibus-ks': {
     name: 'ibus-ks',
@@ -53,6 +55,11 @@ const allImages: {
   'hack-md': {
     name: 'hack-md',
     src: './assets/images/icons/hack-md-logo.png',
+  },
+
+  profile: {
+    name: 'profile',
+    src: './assets/images/profile/profile.jpg',
   },
 };
 

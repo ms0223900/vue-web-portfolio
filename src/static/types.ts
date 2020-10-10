@@ -12,3 +12,6 @@ export type OtherLinkKeys =
   'medium' |
   'git-hub' |
   'hack-md'
+
+export type ProfileKeys =
+  'profile'
