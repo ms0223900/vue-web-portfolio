@@ -56,6 +56,10 @@ const allImages: {
     name: 'hack-md',
     src: './assets/images/icons/hack-md-logo.png',
   },
+  issuu: {
+    name: 'issuu',
+    src: './assets/images/icons/issuu-logo.png',
+  },
 
   profile: {
     name: 'profile',

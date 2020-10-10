@@ -26,6 +26,12 @@ const otherLinks: SingleOtherLink[] = [
     intro: '分享一些比較雜項、隨筆的紀錄',
     iconSrc: allImages['hack-md'].src,
   },
+  {
+    title: 'Issuu設計作品集',
+    link: 'https://issuu.com/227956/docs/__________2016_a4_straight',
+    intro: '還在做設計時的作品集',
+    iconSrc: allImages.issuu.src,
+  },
 ];
 
 export default otherLinks;

@@ -11,7 +11,8 @@ export type ProjectKeys =
 export type OtherLinkKeys =
   'medium' |
   'git-hub' |
-  'hack-md'
+  'hack-md' |
+  'issuu'
 
 export type ProfileKeys =
   'profile'
