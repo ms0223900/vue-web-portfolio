@@ -1,5 +1,5 @@
 <template>
-  <div class="col-sm-12 col-md-6 col-lg-3 wrapper">
+  <div class="col-sm-12 col-md-6 col-lg-4 wrapper">
     <LinkBlock
       :href="singleProjectData.link"
     />
@@ -55,7 +55,9 @@ export default {
     &:hover {
       .project-item--wrapper {
         transition: 0.2s;
-        box-shadow: 0px 0px 14px #666;
+        // box-shadow: 0px 0px 6px #666;
+        box-shadow: 3px 3px 0px var(--primary);
+        // border: 3px solid var(--primary);
       }
     }
   }
@@ -64,11 +66,12 @@ export default {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    background-color: #fff;
     /* padding: 8px; */
     border-radius: 8px;
     overflow: hidden;
-    // border: 2px solid #a00;
-    box-shadow: 0px 0px 10px #aaa;
+    border: 1.5px solid var(--primary);
+    // box-shadow: 0px 0px 10px #aaa;
     transition: 0.2s;
   }
   .project-item--image {

@@ -30,5 +30,6 @@ export default {
     /* display: flex;
     flex-wrap: wrap; */
     /* display: grid; */
+    /* background-color: #eee; */
   }
 </style>

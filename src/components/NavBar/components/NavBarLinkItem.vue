@@ -30,10 +30,16 @@ export default {
   .navbar-link {
     padding: 8px;
     padding-bottom: 4px;
-    color: var(--primary);
-    &.active {
+    // color: var(--primary);
+    color: #fff;
+    &:hover, &.active {
       font-weight: 800;
-      // border-bottom: 2px solid var(--primary);
+      color: #fff;
     }
+    // &.active {
+    //   font-weight: 800;
+    //   color: #fff;
+    //   // border-bottom: 2px solid var(--primary);
+    // }
   }
 </style>
