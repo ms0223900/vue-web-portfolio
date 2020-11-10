@@ -1,6 +1,7 @@
 export type ProjectKeys =
   'ibus-tc' |
   'ibus-ks' |
+  'ebus-ty' |
   'bullet-note' |
   'storybook-theme-color-addon' |
   'test-battle' |

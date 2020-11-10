@@ -1,9 +1,11 @@
 import allImages from './all-images';
 
+export type ProjectType = 'formal' | 'side-project'
 export interface SingleProjectData {
   title: string;
   introduction: string;
   link: string;
+  tag?: ProjectType;
   image: {
     name: string;
     src: string;
@@ -13,6 +15,7 @@ export interface SingleProjectData {
 const projectListData: SingleProjectData[] = [
   {
     title: '台中公車動態',
+    tag: 'formal',
     introduction: '簡短介紹',
     link: 'https://citybus.taichung.gov.tw/ebus',
     image: {
@@ -22,11 +25,22 @@ const projectListData: SingleProjectData[] = [
   },
   {
     title: '高雄公車動態',
+    tag: 'formal',
     introduction: '簡短介紹',
     link: 'https://ibus.tbkc.gov.tw/ibus',
     image: {
       name: '',
       src: allImages['ibus-ks'].src,
+    },
+  },
+  {
+    title: '桃園公車動態',
+    tag: 'formal',
+    introduction: '簡短介紹',
+    link: 'https://ebus.tycg.gov.tw/ebus/',
+    image: {
+      name: '',
+      src: allImages['ebus-ty'].src,
     },
   },
   {

@@ -18,6 +18,10 @@ const allImages: {
     name: 'ibus-tc',
     src: './assets/images/project-images/ibus-tc.png',
   },
+  'ebus-ty': {
+    name: 'ebus-ty',
+    src: './assets/images/project-images/ebus-ty.jpg',
+  },
   'bullet-note': {
     name: 'bullet-note',
     src: 'https://imgur.com/SFpzvmB.gif',
