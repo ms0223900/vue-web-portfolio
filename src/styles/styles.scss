@@ -1,5 +1,7 @@
 :root {
   --primary: rgb(5, 90, 129);
+  --secondary: #BFD7FD;
+  --secondaryLight: #EDF3FF;
   --spacing: 8;
 }
 
@@ -9,4 +11,18 @@
 
 .router-link-exact-active {
   // border-bottom: 3px solid var(--primary);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  background: #bbb; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #777; 
 }

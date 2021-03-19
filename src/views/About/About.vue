@@ -1,5 +1,8 @@
 <template>
   <div class="about-wrapper">
+    <frame-wrapper>
+      {{ 'content here' }}
+    </frame-wrapper>
     <h2>{{ about.title }}</h2>
     <div>
       <VueMarkdown class="markdown-wrapper">
@@ -13,6 +16,7 @@
 import Vue from 'vue';
 import VueMarkdown from 'vue-markdown';
 import about from '@/static/about';
+import FrameWrapper from '@/components/Common/FrameWrapper.vue';
 
 // console.log(about);
 
@@ -27,6 +31,7 @@ export default {
   },
   components: {
     VueMarkdown,
+    FrameWrapper,
   },
 };
 </script>
@@ -39,11 +44,11 @@ export default {
   .markdown-wrapper {
     h2 {
       color: var(--primary);
-      padding-left: 6px;
+      // padding-left: 6px;
       margin-bottom: 16px;
-      font-size: 1.5rem;
-      font-weight: 800;
-      border-left: 6px solid var(--primary);
+      font-size: 1.6rem;
+      font-weight: bolder;
+      // border-left: 6px solid var(--primary);
     }
     h3 {
       font-size: 1.25rem;
