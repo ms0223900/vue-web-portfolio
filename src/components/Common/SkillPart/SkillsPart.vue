@@ -3,7 +3,7 @@
     <header>
       <h2>Skills</h2>
     </header>
-    <div class="row">
+    <div class="row skill-list-wrapper">
       <div
         v-for="(skill, i) in skillList"
         :key="i"
@@ -39,11 +39,14 @@ export default {
     border-color: var(--primary);
     border-radius: 8px;
   }
+  .skill-list-wrapper {
+    padding: 4px;
+  }
 
   h2 {
     text-align: center;
     padding-top: 4px;
     padding-bottom: 4px;
-    border-bottom: 2px solid var(--primary);
+    // border-bottom: 2px solid var(--primary);
   }
 </style>

@@ -1,5 +1,7 @@
 <template>
-  <div>
+  <div
+    class="homepage-wrapper"
+  >
     <portfolio-title />
     <frame-wrapper />
     <resume-item
@@ -8,6 +10,7 @@
       :content="resumeItem.content"
     />
     <skills-part />
+    <other-links-part />
   </div>
 </template>
 
@@ -16,8 +19,8 @@ import PortfolioTitle from '@/components/HomePage/PortfolioTitle.vue';
 import FrameWrapper from '@/components/Common/FrameWrapper.vue';
 import ResumeItem from '@/components/Common/ResumeItem.vue';
 import resumeList from '@/static/resume-list';
-import SkillLevelItem from '@/components/Common/SkillLevelItem.vue';
 import SkillsPart from '@/components/Common/SkillPart/SkillsPart.vue';
+import OtherLinksPart from '@/components/Common/OtherLinksPart/OtherLinksPart.vue';
 
 export default {
   name: 'NewVersionHomePage',
@@ -31,10 +34,15 @@ export default {
     FrameWrapper,
     ResumeItem,
     SkillsPart,
+    OtherLinksPart,
   },
 };
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+  .homepage-wrapper {
+    & >:nth-child(n) {
+      margin-bottom: 32px;
+    }
+  }
 </style>
