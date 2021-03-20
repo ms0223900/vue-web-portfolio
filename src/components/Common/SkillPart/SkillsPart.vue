@@ -34,9 +34,9 @@ export default {
 
 <style lang="scss" scoped>
   .wrapper {
-    border-width: 4.5px;
-    border-style: solid;
-    border-color: var(--primary);
+    // border-width: 4.5px;
+    // border-style: solid;
+    // border-color: var(--primary);
     border-radius: 8px;
   }
   .skill-list-wrapper {

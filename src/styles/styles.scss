@@ -7,10 +7,22 @@
 
 * {
   // outline: 1px solid #c00;
+  margin: 0px;
 }
 
-.router-link-exact-active {
-  // border-bottom: 3px solid var(--primary);
+.frame-style-button {
+  border-radius: 4px;
+  padding: 4px 8px 4px 8px;
+  transition: 0.2s;
+  color: var(--primary);
+  &.outlined {
+    border: 1.5px solid var(--primary);
+    background-color: #fff;
+    &:hover {
+      transition: 0.2s;
+      background-color: var(--secondaryLight);
+    }
+  }  
 }
 
 ::-webkit-scrollbar {

@@ -37,7 +37,7 @@ export default {
 
 <style lang="scss" scoped>
   .frame-wrapper {
-    border-width: 4.5px;
+    border-width: 3.5px;
     border-style: solid;
     border-color: var(--primary);
     border-radius: 8px;

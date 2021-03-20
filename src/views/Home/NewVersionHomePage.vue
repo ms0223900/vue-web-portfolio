@@ -3,7 +3,7 @@
     class="homepage-wrapper"
   >
     <portfolio-title />
-    <frame-wrapper />
+    <projects-part />
     <resume-item
       v-for="(resumeItem, i) in resumeList"
       :key="i"
@@ -21,6 +21,7 @@ import ResumeItem from '@/components/Common/ResumeItem.vue';
 import resumeList from '@/static/resume-list';
 import SkillsPart from '@/components/Common/SkillPart/SkillsPart.vue';
 import OtherLinksPart from '@/components/Common/OtherLinksPart/OtherLinksPart.vue';
+import ProjectsPart from '@/components/Common/ProjectsPart/ProjectsPart.vue';
 
 export default {
   name: 'NewVersionHomePage',
@@ -31,10 +32,10 @@ export default {
   },
   components: {
     PortfolioTitle,
-    FrameWrapper,
     ResumeItem,
     SkillsPart,
     OtherLinksPart,
+    ProjectsPart,
   },
 };
 </script>
@@ -42,7 +43,7 @@ export default {
 <style lang="scss" scoped>
   .homepage-wrapper {
     & >:nth-child(n) {
-      margin-bottom: 32px;
+      margin-bottom: 80px;
     }
   }
 </style>
