@@ -7,14 +7,7 @@
       :key="i"
       :content="resumeItem.content"
     />
-    <div :style="{
-      width: '50%',
-    }">
-      <skill-level-item
-        :skillName="'TypeScript'"
-        :level="3"
-      />
-    </div>
+    <skills-part />
   </div>
 </template>
 
@@ -24,6 +17,7 @@ import FrameWrapper from '@/components/Common/FrameWrapper.vue';
 import ResumeItem from '@/components/Common/ResumeItem.vue';
 import resumeList from '@/static/resume-list';
 import SkillLevelItem from '@/components/Common/SkillLevelItem.vue';
+import SkillsPart from '@/components/Common/SkillPart/SkillsPart.vue';
 
 export default {
   name: 'NewVersionHomePage',
@@ -33,7 +27,10 @@ export default {
     });
   },
   components: {
-    PortfolioTitle, FrameWrapper, ResumeItem, SkillLevelItem,
+    PortfolioTitle,
+    FrameWrapper,
+    ResumeItem,
+    SkillsPart,
   },
 };
 </script>

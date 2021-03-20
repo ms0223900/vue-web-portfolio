@@ -46,8 +46,10 @@ export default {
   .wrapper {
     display: flex;
     align-items: center;
+    padding: 4px;
+    border-radius: 8px;
     h3 {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       width: 50%;
     }
     .skill-wrapper {
@@ -58,6 +60,11 @@ export default {
       span {
         color: #555;
       }
+    }
+    transition: 0.3s;
+    &:hover {
+      transition: 0.3s;
+      background-color: #eee;
     }
   }
   .skill-item {
