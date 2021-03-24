@@ -76,13 +76,14 @@ export default {
       color: #fff;
       border-radius: 4px;
       // border: 4px solid var(--primary);
-      font-size: 1.1rem;
+      // font-size: 1.1rem;
     }
     .intro-wrapper {
       padding: 4px;
     }
     .img-wrapper {
       border-radius: 4px;
+      max-height: 320px;
       overflow: hidden;
       &:hover {
         opacity: 0.9;
