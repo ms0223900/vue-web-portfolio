@@ -3,6 +3,7 @@
     <div
       v-for="(a, index) in Array(amount).fill(0)"
       :key="index"
+      @click="$emit('click-bullet', index)"
       :class="[
         'bullet-item',
         { selected: selectedIndex === index, }
@@ -14,6 +15,9 @@
 <script>
 export default {
   name: 'BulletList',
+  emits: [
+    'click-bullet',
+  ],
   props: {
     amount: {
       type: Number,
@@ -41,6 +45,11 @@ export default {
       border-style: solid;
       background-color: #fff;
       cursor: pointer;
+      transition: 0.2s;
+      &:hover {
+        background-color: var(--secondaryLight);
+      transition: 0.2s;
+      }
       &.selected {
         background-color: var(--primary);
       }

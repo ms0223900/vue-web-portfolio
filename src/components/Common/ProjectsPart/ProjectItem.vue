@@ -5,7 +5,6 @@
     <div
       class="project-item-wrapper"
     >
-      <h3>{{ singleProjectData.title }}</h3>
       <a :href="singleProjectData.link" target="_blank">
         <div class="img-wrapper">
           <img
@@ -14,12 +13,16 @@
           />
         </div>
       </a>
+
       <div
         class="row intro-wrapper"
       >
-        <p class="col-8">{{ singleProjectData.intro }}</p>
-        <div class="col-4">
-          <button class="frame-style-button outlined">查看細節</button>
+        <div class="col-12">
+          <div class="title-wrapper">
+            <h3>{{ singleProjectData.title }}</h3>
+            <button class="frame-style-button outlined">查看細節</button>
+          </div>
+          <p>{{ singleProjectData.intro }}</p>
         </div>
       </div>
     </div>
@@ -50,7 +53,7 @@ export default {
   data() {
     return ({
       wrapperStyles: {
-        maxWidth: 300,
+        maxWidth: '700px',
         margin: 'auto',
       },
     });
@@ -63,23 +66,30 @@ export default {
   .project-item-wrapper {
     position: relative;
     // padding: 16px;
-    padding: 8px;
+    padding: 4px;
     // background-color: #eee;
     h3 {
-      // position: absolute;
-      top: 8px;
-      left: 8px;
-      padding: 8px;
-      margin-bottom: 4px;
+      // margin: 4px;
+      padding-bottom: 8px;
       // background-color: #fff;
-      background-color: var(--primary);
+      // background-color: var(--primary);
       color: #fff;
+      color: var(--primary);
       border-radius: 4px;
-      // border: 4px solid var(--primary);
+      font-weight: lighter;
+      // border-bottom: 1px solid var(--primary);
       // font-size: 1.1rem;
+    }
+    .title-wrapper {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
     }
     .intro-wrapper {
       padding: 4px;
+      padding-top: 8px;
+      align-items: flex-start;
+      justify-content: space-around;
     }
     .img-wrapper {
       border-radius: 4px;

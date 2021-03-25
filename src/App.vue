@@ -2,10 +2,10 @@
   <div id="app">
     <NavBar />
     <div class="row app-wrapper">
-      <div class="col-12 col-md-3">
+      <!-- <div class="col-12 col-md-3">
         <ProfilePart />
-      </div>
-      <div class="col-12 col-md-9">
+      </div> -->
+      <div class="col-12 col-md-12">
         <router-view class="app-wrapper"/>
       </div>
     </div>
@@ -20,7 +20,7 @@ export default {
   name: 'App',
   components: {
     NavBar,
-    ProfilePart,
+    // ProfilePart,
   },
 };
 </script>

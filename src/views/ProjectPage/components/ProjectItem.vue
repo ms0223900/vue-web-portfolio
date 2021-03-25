@@ -65,6 +65,7 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    max-width: 400px;
     height: 100%;
     background-color: #fff;
     /* padding: 8px; */

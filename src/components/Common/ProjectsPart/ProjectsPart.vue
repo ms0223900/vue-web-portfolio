@@ -25,6 +25,7 @@
     <bullet-list
       :amount="projectsAmount"
       :selectedIndex="selectedIndex"
+      @click-bullet="handleSetIndex"
     />
   </div>
 </template>
@@ -67,6 +68,11 @@ export default {
         }
       }
     },
+    handleSetIndex(index) {
+      if (typeof index === 'number') {
+        this.selectedIndex = index;
+      }
+    },
   },
   computed: {
     singleProjectData() {
@@ -88,6 +94,7 @@ export default {
   .projects-wrapper {
     display: flex;
     align-items: center;
+    // justify-content: flex-end;
   }
   .fade-enter-active, .fade-leave-active {
     position: relative;
