@@ -11,6 +11,7 @@
     />
     <skills-part />
     <other-links-part />
+    <other-projects-part />
   </div>
 </template>
 
@@ -22,6 +23,7 @@ import resumeList from '@/static/resume-list';
 import SkillsPart from '@/components/Common/SkillPart/SkillsPart.vue';
 import OtherLinksPart from '@/components/Common/OtherLinksPart/OtherLinksPart.vue';
 import ProjectsPart from '@/components/Common/ProjectsPart/ProjectsPart.vue';
+import OtherProjectsPart from '@/components/Common/OtherProjectsPart/OtherProjectsPart.vue';
 
 export default {
   name: 'NewVersionHomePage',
@@ -36,6 +38,7 @@ export default {
     SkillsPart,
     OtherLinksPart,
     ProjectsPart,
+    OtherProjectsPart,
   },
 };
 </script>

@@ -1,6 +1,8 @@
 <template>
-  <div class="button-wrapper" @click="$emit('click')">
-    <img :src="imgSrc" />
+  <div class="wrapper">
+    <div class="button-wrapper" @click="$emit('click')">
+      <img :src="imgSrc" />
+    </div>
   </div>
 </template>
 
@@ -24,15 +26,18 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+  .wrapper {
+    padding: 4px;
+  }
   .button-wrapper {
     user-select: none;
     display: flex;
     flex-shrink: 0;
     align-items: center;
     justify-content: center;
-    width: 60px;
-    height: 60px;
+    width: 48px;
+    height: 48px;
     padding: 10px;
     border: 2px solid var(--primary);
     border-radius: 100%;
