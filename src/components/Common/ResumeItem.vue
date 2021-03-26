@@ -1,11 +1,13 @@
 <template>
-  <frame-wrapper>
-    <div class="markdown-wrapper">
-      <VueMarkdown>
-        {{ content }}
-      </VueMarkdown>
-    </div>
-  </frame-wrapper>
+  <div class="container">
+    <frame-wrapper>
+      <div class="markdown-wrapper">
+        <VueMarkdown>
+          {{ content }}
+        </VueMarkdown>
+      </div>
+    </frame-wrapper>
+  </div>
 </template>
 
 <script>

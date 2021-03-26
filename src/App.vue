@@ -32,10 +32,22 @@ export default {
     position: sticky;
     top: 0px
   } */
+  #app {
+    background-image: url('/assets/images/bg/bg-top.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* background-position: 0px -120px; */
+  }
   .app-wrapper {
-    padding: 16px;
+    padding: 0px;
+    padding-top: 8px;
     /* padding-top: 0px; */
     margin: auto;
-    max-width: 1080px;
+    /* max-width: 1080px; */
+  }
+  @media screen and (min-width: 600px) {
+    .app-wrapper {
+      padding: 16px;
+    }
   }
 </style>

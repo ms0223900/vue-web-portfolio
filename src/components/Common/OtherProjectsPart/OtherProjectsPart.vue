@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <frame-wrapper :wrapperStyles="{
       overflow: 'hidden',
       backgroundColor: '#eee',

@@ -53,7 +53,8 @@ export default {
   data() {
     return ({
       wrapperStyles: {
-        maxWidth: '700px',
+        maxWidth: '800px',
+        height: '90%',
         margin: 'auto',
       },
     });
@@ -92,11 +93,19 @@ export default {
       justify-content: space-around;
     }
     .img-wrapper {
+      position: relative;
       border-radius: 4px;
-      max-height: 320px;
+      // max-height: 320px;
+      height: 0px;
+      padding: 25%;
       overflow: hidden;
       &:hover {
         opacity: 0.9;
+      }
+      img {
+        position: absolute;
+        top: 0px;
+        left: 0px;
       }
     }
     img {

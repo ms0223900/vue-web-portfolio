@@ -34,7 +34,7 @@ export default {
   .project-item-wrapper {
     // flex-shrink: 0;
     // flex-grow: 1;
-    min-width: 200px;
+    width: 200px;
     height: 100%;
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);

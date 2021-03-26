@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="wrapper container">
     <header>
       <h2>Skills</h2>
     </header>

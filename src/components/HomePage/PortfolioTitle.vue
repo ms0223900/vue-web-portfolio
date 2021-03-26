@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="wrapper container">
     <h1>
       {{ "Penguin's Portfolio" }}
     </h1>
@@ -18,6 +18,7 @@ export default {
     padding: 16px;
     border-radius: 8px;
     border: 4px solid var(--primary);
+    background-color: #fff;
     box-shadow: 8px 8px 0px var(--secondary);
     transition: 0.1s;
     &:hover {

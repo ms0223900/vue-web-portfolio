@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="wrapper container">
     <div class="projects-wrapper">
       <prev-next-button
         :buttonType="'prev'"
@@ -94,6 +94,8 @@ export default {
   .projects-wrapper {
     display: flex;
     align-items: center;
+    max-width: 1080px;
+    margin: auto;
     // justify-content: flex-end;
   }
   .fade-enter-active, .fade-leave-active {
@@ -103,7 +105,7 @@ export default {
   }
   .fade-enter, .fade-leave-to {
     // display: none;
-    opacity: 0;
+    opacity: 0.2;
     // transform: translateY(30px);
   }
 </style>

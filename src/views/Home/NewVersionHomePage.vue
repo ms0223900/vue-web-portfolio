@@ -9,7 +9,9 @@
       :key="i"
       :content="resumeItem.content"
     />
-    <skills-part />
+    <div class="skills-part-wrapper">
+      <skills-part />
+    </div>
     <other-links-part />
     <other-projects-part />
   </div>
@@ -48,5 +50,11 @@ export default {
     & >:nth-child(n) {
       margin-bottom: 80px;
     }
+    // background-position: -10%;
+  }
+  .skills-part-wrapper {
+    background: url('/assets/images/bg/bg-triangles.png') no-repeat;
+    background-position: 50% 0%;
+    background-size: 100% auto;
   }
 </style>

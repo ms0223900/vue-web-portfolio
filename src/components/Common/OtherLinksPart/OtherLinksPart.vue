@@ -1,9 +1,9 @@
 <template>
-  <div class="other-links-part-wrapper row">
+  <div class="other-links-part-wrapper row container">
     <div
       v-for="(otherLink, i) in otherLinks"
       :key="i"
-      class="link-item-wrapper col-6"
+      class="link-item-wrapper col-12 col-md-6"
     >
       <other-link-item
         :singleOtherLinkData="otherLink"
@@ -33,6 +33,7 @@ export default {
     margin: auto;
   }
   .link-item-wrapper {
+    // margin: auto;
     padding: 0px;
     padding-right: 8px;
     padding-bottom: 8px;
