@@ -5,7 +5,9 @@
       <!-- <div class="col-12 col-md-3">
         <ProfilePart />
       </div> -->
-      <div class="col-12 col-md-12">
+      <div class="col-12 col-md-12" :style="{
+        padding: 0,
+      }">
         <router-view class="app-wrapper"/>
       </div>
     </div>
@@ -47,7 +49,7 @@ export default {
   }
   @media screen and (min-width: 600px) {
     .app-wrapper {
-      padding: 16px;
+      padding: 0px;
     }
   }
 </style>

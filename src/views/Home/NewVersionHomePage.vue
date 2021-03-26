@@ -2,18 +2,21 @@
   <div
     class="homepage-wrapper"
   >
-    <portfolio-title />
-    <projects-part />
-    <resume-item
-      v-for="(resumeItem, i) in resumeList"
-      :key="i"
-      :content="resumeItem.content"
-    />
-    <div class="skills-part-wrapper">
-      <skills-part />
+    <div class="main-wrapper">
+      <portfolio-title />
+      <projects-part />
+      <resume-item
+        v-for="(resumeItem, i) in resumeList"
+        :key="i"
+        :content="resumeItem.content"
+      />
+      <div class="skills-part-wrapper">
+        <skills-part />
+      </div>
+      <other-links-part />
+      <other-projects-part />
     </div>
-    <other-links-part />
-    <other-projects-part />
+    <footer-part />
   </div>
 </template>
 
@@ -26,6 +29,7 @@ import SkillsPart from '@/components/Common/SkillPart/SkillsPart.vue';
 import OtherLinksPart from '@/components/Common/OtherLinksPart/OtherLinksPart.vue';
 import ProjectsPart from '@/components/Common/ProjectsPart/ProjectsPart.vue';
 import OtherProjectsPart from '@/components/Common/OtherProjectsPart/OtherProjectsPart.vue';
+import FooterPart from '@/components/Common/FooterPart/FooterPart.vue';
 
 export default {
   name: 'NewVersionHomePage',
@@ -41,14 +45,17 @@ export default {
     OtherLinksPart,
     ProjectsPart,
     OtherProjectsPart,
+    FooterPart,
   },
 };
 </script>
 
 <style lang="scss" scoped>
   .homepage-wrapper {
-    & >:nth-child(n) {
-      margin-bottom: 80px;
+    .main-wrapper {
+      & >:nth-child(n) {
+        margin-bottom: 80px;
+      }
     }
     // background-position: -10%;
   }
