@@ -1,5 +1,7 @@
 <template>
-  <div id="app">
+  <div id="app" :style="{
+    backgroundImage: 'url(./assets/images/bg/bg-top.png)',
+  }">
     <!-- <NavBar /> -->
     <div class="row app-wrapper">
       <!-- <div class="col-12 col-md-3">
@@ -26,7 +28,7 @@ export default {
   },
 };
 </script>
-<style scoped>
+<style lang="scss" scoped>
   .row {
     position: relative;
   }
@@ -35,7 +37,7 @@ export default {
     top: 0px
   } */
   #app {
-    background-image: url('/assets/images/bg/bg-top.png');
+    // background-image: url('/assets/images/bg/bg-top.png');
     background-repeat: no-repeat;
     background-size: 100%;
     /* background-position: 0px -120px; */

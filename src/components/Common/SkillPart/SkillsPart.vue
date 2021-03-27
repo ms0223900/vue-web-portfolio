@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper container">
+  <div class="wrapper container skills-part-wrapper" :style="skillsPartStyles">
     <part-title title="技能 Skills" />
     <div class="row skill-list-wrapper">
       <div
@@ -33,7 +33,11 @@ export default {
   components: { SkillRealmItem, PartTitle },
   name: 'SkillsPart',
   data() {
+    const skillsPartStyles = {
+      backgroundImage: `url(${'/assets/images/bg/bg-triangles.png'})`,
+    };
     return ({
+      skillsPartStyles,
       skillList: sortedSkillList,
     });
   },
@@ -58,5 +62,10 @@ export default {
     font-size: 1.5rem;
     font-weight: bolder;
     // border-bottom: 2px solid var(--primary);
+  }
+  .skills-part-wrapper {
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    background-size: 100% auto;
   }
 </style>

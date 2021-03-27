@@ -1,5 +1,5 @@
 <template>
-  <div class="footer-wrapper">
+  <div class="footer-wrapper" :style="footerStyles">
     <div class="container wrapper">
       <profile-item :profileData="profile" />
       <info-list />
@@ -15,8 +15,12 @@ import ProfileItem from './ProfileItem.vue';
 export default {
   name: 'FooterPart',
   data() {
+    const footerStyles = {
+      backgroundImage: `url(${'/assets/images/bg/bg-footer.png'})`,
+    };
     return ({
       profile,
+      footerStyles,
     });
   },
   components: {
@@ -29,7 +33,7 @@ export default {
 
 <style lang="scss" scoped>
   .footer-wrapper {
-    background: url('/assets/images/bg/bg-footer.png')
+    // background: url('/assets/images/bg/bg-footer.png')
   }
   .container.wrapper {
     // position: relative;

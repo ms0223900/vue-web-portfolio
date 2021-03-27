@@ -6,9 +6,7 @@
       <portfolio-title />
       <projects-part />
       <resumes-part />
-      <div class="skills-part-wrapper">
-        <skills-part />
-      </div>
+      <skills-part />
       <other-links-part />
       <other-projects-part />
     </div>
@@ -53,10 +51,5 @@ export default {
       }
     }
     // background-position: -10%;
-  }
-  .skills-part-wrapper {
-    background: url('/assets/images/bg/bg-triangles.png') no-repeat;
-    background-position: 50% 0%;
-    background-size: 100% auto;
   }
 </style>
