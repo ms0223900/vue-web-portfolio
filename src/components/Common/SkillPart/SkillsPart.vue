@@ -34,7 +34,7 @@ export default {
   name: 'SkillsPart',
   data() {
     const skillsPartStyles = {
-      backgroundImage: `url(${'/assets/images/bg/bg-triangles.png'})`,
+      backgroundImage: `url(${'./assets/images/bg/bg-triangles.png'})`,
     };
     return ({
       skillsPartStyles,

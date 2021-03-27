@@ -16,7 +16,7 @@ export default {
   name: 'FooterPart',
   data() {
     const footerStyles = {
-      backgroundImage: `url(${'/assets/images/bg/bg-footer.png'})`,
+      backgroundImage: `url(${'./assets/images/bg/bg-footer.png'})`,
     };
     return ({
       profile,
