@@ -1,6 +1,11 @@
+export interface SingleSkillData {
+  level: number;
+  skillName: string;
+}
+
 const skillList = [
   {
-    skillRealmName: 'FrontEnd',
+    skillRealmName: '前端技能',
     skills: [
       {
         level: 3, // 0 ~ 4
@@ -11,42 +16,50 @@ const skillList = [
         skillName: 'React',
       },
       {
-        level: 1,
-        skillName: 'Vue',
+        level: 2,
+        skillName: 'Storybook',
       },
     ],
   },
   {
-    skillRealmName: 'Others',
+    skillRealmName: 'React相關函式庫',
     skills: [
       {
         level: 3, // 0 ~ 4
-        skillName: 'TypeScript',
-      },
-      {
-        level: 3,
-        skillName: 'React',
+        skillName: 'react-router',
       },
       {
         level: 1,
-        skillName: 'Vue',
+        skillName: 'react-redux',
+      },
+      {
+        level: 3,
+        skillName: 'material-ui',
+      },
+      {
+        level: 2,
+        skillName: 'react-leaflet',
+      },
+      {
+        level: 2,
+        skillName: 'GraphQL client',
       },
     ],
   },
   {
-    skillRealmName: 'Others',
+    skillRealmName: '其他工具/技能',
     skills: [
       {
-        level: 3, // 0 ~ 4
-        skillName: 'TypeScript',
+        level: 1, // 0 ~ 4
+        skillName: 'CI(Drone)',
       },
       {
-        level: 3,
-        skillName: 'React',
+        level: 2,
+        skillName: 'Docker',
       },
       {
         level: 1,
-        skillName: 'Vue',
+        skillName: 'Python',
       },
     ],
   },

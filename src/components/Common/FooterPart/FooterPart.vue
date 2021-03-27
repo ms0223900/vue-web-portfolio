@@ -34,8 +34,13 @@ export default {
   .container.wrapper {
     // position: relative;
     // top: 40px;
-    display: flex;
+    display: block;
     align-items: center;
     min-height: 280px;
+  }
+  @media screen and (min-width: 400px) {
+    .container.wrapper {
+      display: flex;
+    }
   }
 </style>

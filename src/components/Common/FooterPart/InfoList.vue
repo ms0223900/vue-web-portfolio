@@ -24,11 +24,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @media screen and (max-width: 300px) {
-    ul {
-      display: block;
-    }
-  }
   ul {
     display: flex;
     width: 80%;
@@ -37,6 +32,12 @@ export default {
     flex-wrap: wrap;
     &:nth-child(n+2) {
       padding-left: 8px;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    ul {
+      display: block;
+      width: 100%;
     }
   }
 </style>

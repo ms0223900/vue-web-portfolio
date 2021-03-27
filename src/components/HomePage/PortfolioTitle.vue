@@ -1,9 +1,11 @@
 <template>
-  <div class="wrapper container">
-    <h1>
-      {{ "Penguin's Portfolio" }}
-    </h1>
-    <div />
+  <div class="col-12">
+    <div class="wrapper container">
+      <h1>
+        {{ "Penguin's Portfolio" }}
+      </h1>
+      <div />
+    </div>
   </div>
 </template>
 

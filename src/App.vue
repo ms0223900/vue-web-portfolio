@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <NavBar />
+    <!-- <NavBar /> -->
     <div class="row app-wrapper">
       <!-- <div class="col-12 col-md-3">
         <ProfilePart />
@@ -21,7 +21,7 @@ import ProfilePart from '@/components/Profile/ProfilePart.vue';
 export default {
   name: 'App',
   components: {
-    NavBar,
+    // NavBar,
     // ProfilePart,
   },
 };
@@ -42,7 +42,7 @@ export default {
   }
   .app-wrapper {
     padding: 0px;
-    padding-top: 8px;
+    /* padding-top: 8px; */
     /* padding-top: 0px; */
     margin: auto;
     /* max-width: 1080px; */
@@ -50,6 +50,7 @@ export default {
   @media screen and (min-width: 600px) {
     .app-wrapper {
       padding: 0px;
+      /* padding-top: 8px; */
     }
   }
 </style>

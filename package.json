@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://ms0223900.github.io/vue-web-portfolio/",
   "scripts": {
-    "start": "vue-cli-service serve",
+    "start": "vue-cli-service serve --open",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",

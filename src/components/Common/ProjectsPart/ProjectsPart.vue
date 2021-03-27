@@ -1,15 +1,12 @@
 <template>
   <div class="wrapper container">
+    <part-title title="主要專案 Projects" />
     <div class="projects-wrapper">
       <prev-next-button
         :buttonType="'prev'"
         @click="handlePrevNext('prev')"
       />
-      <div :style="{
-        overflow: 'hidden',
-        flex: '1',
-        minHeight: '500px',
-      }">
+      <div class="project-item-wrapper">
         <transition name="fade" mode="out-in">
           <project-item
             :key="JSON.stringify(singleProjectData)"
@@ -35,11 +32,14 @@ import projects from '@/static/projects';
 import ProjectItem from './ProjectItem.vue';
 import PrevNextButton from './PrevNextButton.vue';
 import BulletList from './BulletList.vue';
+import PartTitle from '../PartTitle.vue';
 
 const allProjects = projects.slice(0, 3);
 
 export default {
-  components: { ProjectItem, PrevNextButton, BulletList },
+  components: {
+    ProjectItem, PrevNextButton, BulletList, PartTitle,
+  },
   name: 'ProjectsPart',
   data() {
     const initSelectedIndex = 0;
@@ -98,6 +98,15 @@ export default {
     margin: auto;
     // justify-content: flex-end;
   }
+  .project-item-wrapper {
+    overflow: hidden;
+    flex: 1;
+    min-height: 500px;
+    @media screen and (max-width: 768px) {
+      min-height: auto;
+    }
+  }
+
   .fade-enter-active, .fade-leave-active {
     position: relative;
     // left: 10000px;

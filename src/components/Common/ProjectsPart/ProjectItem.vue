@@ -18,9 +18,13 @@
         class="row intro-wrapper"
       >
         <div class="col-12">
-          <div class="title-wrapper">
-            <h3>{{ singleProjectData.title }}</h3>
-            <button class="frame-style-button outlined">查看細節</button>
+          <div class="title-wrapper row">
+            <h3 class="col-12 col-md-8">{{ singleProjectData.title }}</h3>
+            <div class="col-12 col-md-4 btn-wrapper">
+              <button class="frame-style-button outlined">
+                查看細節
+              </button>
+            </div>
           </div>
           <p>{{ singleProjectData.intro }}</p>
         </div>
@@ -85,6 +89,14 @@ export default {
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
+      padding-bottom: 8px;
+    }
+    .btn-wrapper {
+      display: flex;
+      justify-content: flex-end;
+      @media screen and (max-width: 768px) {
+        justify-content: flex-start;
+      }
     }
     .intro-wrapper {
       padding: 4px;

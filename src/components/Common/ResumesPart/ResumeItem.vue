@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container wrapper">
     <frame-wrapper>
       <div class="markdown-wrapper">
         <VueMarkdown>
@@ -12,7 +12,7 @@
 
 <script>
 import VueMarkdown from 'vue-markdown';
-import FrameWrapper from './FrameWrapper.vue';
+import FrameWrapper from '../FrameWrapper.vue';
 
 export default {
   components: {
@@ -29,6 +29,7 @@ export default {
 </script>
 
 <style lang="scss">
+
   .markdown-wrapper {
     padding: 16px;
     width: 100%;

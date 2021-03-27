@@ -1,8 +1,6 @@
 <template>
   <div class="wrapper container">
-    <header>
-      <h2>Skills</h2>
-    </header>
+    <part-title title="技能 Skills" />
     <div class="row skill-list-wrapper">
       <div
         v-for="(skill, i) in skillList"
@@ -17,16 +15,26 @@
   </div>
 </template>
 
-<script>
-import skillList from '@/static/skillList';
+<script lang="ts">
+import skillList, { SingleSkillData } from '@/static/skillList';
 import SkillRealmItem from './SkillRealmItem.vue';
+import PartTitle from '../PartTitle.vue';
+
+const sortByLevelFn = (prev: SingleSkillData, next: SingleSkillData) => (
+  next.level - prev.level
+);
+
+const sortedSkillList = skillList.map((s) => ({
+  ...s,
+  skills: s.skills.sort(sortByLevelFn),
+}));
 
 export default {
-  components: { SkillRealmItem },
+  components: { SkillRealmItem, PartTitle },
   name: 'SkillsPart',
   data() {
     return ({
-      skillList,
+      skillList: sortedSkillList,
     });
   },
 };
@@ -47,6 +55,8 @@ export default {
     text-align: center;
     padding-top: 4px;
     padding-bottom: 4px;
+    font-size: 1.5rem;
+    font-weight: bolder;
     // border-bottom: 2px solid var(--primary);
   }
 </style>

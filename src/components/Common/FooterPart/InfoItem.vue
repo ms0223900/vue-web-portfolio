@@ -40,6 +40,8 @@ export default {
   li {
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin: auto;
     .img-wrapper {
       width: 30px;
       height: 30px;

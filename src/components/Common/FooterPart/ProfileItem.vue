@@ -33,6 +33,7 @@ export default {
     align-items: center;
     min-width: 200px;
     width: 20%;
+    margin: auto;
     img {
       // max-width: 60px;
       width: 60px;

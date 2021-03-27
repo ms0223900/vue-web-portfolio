@@ -10,8 +10,8 @@ Vue.use(VueRouter);
 export const routes: RouteConfig[] = [
   {
     path: '/',
-    name: 'Home',
-    component: About,
+    name: 'NewVersionHomePage',
+    component: NewVersionHomePage,
     // component: Home,
   },
   {
