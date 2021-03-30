@@ -27,7 +27,8 @@ export default {
   ul {
     display: flex;
     width: 80%;
-    justify-content: space-between;
+    // justify-content: space-between;
+    justify-content: flex-start;
     list-style: none;
     flex-wrap: wrap;
     &:nth-child(n+2) {

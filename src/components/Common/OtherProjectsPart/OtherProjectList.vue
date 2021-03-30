@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="other-projects-wrapper">
     <div
       v-for="(sideProjectData, i) in sideProjectList"
       :key="i"
@@ -46,11 +46,16 @@ export default {
     }
     100% {
       // left: -177.5%;
-      left: -207%;
+      // left: -207%;
+      // left: -119.3%;
+      left: -1484px;
       // transform: translateX(-66.66%);
     }
   }
-  .wrapper {
+  @media screen and (min-width: 1280px) {
+
+  }
+  .other-projects-wrapper {
     position: relative;
     display: flex;
     // width: 800px;
@@ -62,7 +67,6 @@ export default {
     animation-name: autoScroll;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    // animation: autoScroll 3s fill;
     &:hover {
       animation-play-state: paused;
     }
@@ -70,4 +74,9 @@ export default {
       padding-left: 12px;
     }
   }
+  // @media screen and (min-width: 1280px) {
+  //   .other-projects-wrapper {
+  //     animation-duration: 10s;
+  //   }
+  // }
 </style>

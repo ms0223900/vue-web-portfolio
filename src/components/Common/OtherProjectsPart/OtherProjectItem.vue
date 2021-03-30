@@ -1,15 +1,17 @@
 <template>
   <div class="project-item-wrapper">
-    <div class="img-wrapper">
-      <img
-        :alt="otherProjectData.img.name"
-        :src="otherProjectData.img.src"
-      />
-    </div>
-    <div class="content-wrapper">
-      <h2>{{ otherProjectData.title }}</h2>
-      <p>{{ otherProjectData.content }}</p>
-    </div>
+    <a :href="otherProjectData.link ? otherProjectData.link : undefined" target="_blank">
+      <div class="img-wrapper">
+        <img
+          :alt="otherProjectData.img.name"
+          :src="otherProjectData.img.src"
+        />
+      </div>
+      <div class="content-wrapper">
+        <h2>{{ otherProjectData.title }}</h2>
+        <p>{{ otherProjectData.content }}</p>
+      </div>
+    </a>
   </div>
 </template>
 
@@ -55,6 +57,11 @@ export default {
       h2 {
         font-size: 1.2rem;
         color: var(--primary)
+      }
+    }
+    a {
+      p {
+        color: #111;
       }
     }
   }

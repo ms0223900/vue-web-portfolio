@@ -40,7 +40,12 @@ ul {
       transition: 0.2s;
       background-color: var(--secondaryLight);
     }
-  }  
+  }
+}
+button {
+  a:hover {
+    text-decoration: none;
+  }
 }
 
 ::-webkit-scrollbar {

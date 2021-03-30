@@ -6,7 +6,7 @@ export interface SingleImage {
 }
 
 type ImageKeys = ProjectKeys | OtherLinkKeys | ProfileKeys |
-  'icon-email'
+  'icon-email' | 'icon-facebook' | 'icon-book'
 
 const allImages: {
   [x in ImageKeys]: SingleImage;
@@ -73,7 +73,15 @@ const allImages: {
 
   'icon-email': {
     name: 'icon-email',
-    src: './assets/images/profile/profile.jpg',
+    src: './assets/images/icons/icon-email.svg',
+  },
+  'icon-facebook': {
+    name: 'icon-facebook',
+    src: './assets/images/icons/icon-facebook.svg',
+  },
+  'icon-book': {
+    name: 'icon-book',
+    src: './assets/images/icons/icon-book.svg',
   },
 };
 

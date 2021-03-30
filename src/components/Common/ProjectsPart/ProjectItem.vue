@@ -22,7 +22,9 @@
             <h3 class="col-12 col-md-8">{{ singleProjectData.title }}</h3>
             <div class="col-12 col-md-4 btn-wrapper">
               <button class="frame-style-button outlined">
-                查看細節
+                <a :href="singleProjectData.link" target="_blank">
+                  查看細節
+                </a>
               </button>
             </div>
           </div>
@@ -103,6 +105,9 @@ export default {
       padding-top: 8px;
       align-items: flex-start;
       justify-content: space-around;
+      p {
+        white-space: pre-wrap;
+      }
     }
     .img-wrapper {
       position: relative;

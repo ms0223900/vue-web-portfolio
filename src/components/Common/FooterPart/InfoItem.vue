@@ -7,7 +7,7 @@
       />
     </div>
     <h3>
-      <a v-if="!!infoData.link" :href="infoData.link">
+      <a v-if="!!infoData.link" :href="infoData.link" target="_blank">
         {{ infoData.title }}
       </a>
       <template v-else>
@@ -42,6 +42,7 @@ export default {
     align-items: center;
     justify-content: center;
     margin: auto;
+    padding-left: 16px;
     .img-wrapper {
       width: 30px;
       height: 30px;
@@ -55,6 +56,7 @@ export default {
       font-size: 1rem;
       padding: 8px;
       color: #fff;
+      margin-bottom: 0px;
       a {
         color: #fff;
       }

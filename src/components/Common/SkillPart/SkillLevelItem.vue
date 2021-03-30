@@ -64,7 +64,7 @@ export default {
     transition: 0.3s;
     &:hover {
       transition: 0.3s;
-      background-color: #eee;
+      background-color: rgba(0,0,0,0.1);
     }
   }
   .skill-item {
