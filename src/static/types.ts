@@ -2,12 +2,15 @@ export type ProjectKeys =
   'ibus-tc' |
   'ibus-ks' |
   'ebus-ty' |
+  'ebus-ty-app' |
+
   'bullet-note' |
   'storybook-theme-color-addon' |
   'test-battle' |
   'react-games' |
   'kabu-prediction' |
-  'chick-shooting-game'
+  'chick-shooting-game' |
+  'fb-crawl-project'
 
 export type OtherLinkKeys =
   'medium' |

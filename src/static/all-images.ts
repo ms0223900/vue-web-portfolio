@@ -23,6 +23,11 @@ const allImages: {
     name: 'ebus-ty',
     src: './assets/images/project-images/ebus-ty.jpg',
   },
+  'ebus-ty-app': {
+    name: 'ebus-ty-app',
+    src: './assets/images/project-images/ebus-ty-app.jpg',
+  },
+
   'bullet-note': {
     name: 'bullet-note',
     src: 'https://imgur.com/SFpzvmB.gif',
@@ -46,6 +51,10 @@ const allImages: {
   'chick-shooting-game': {
     name: 'chick-shooting-game',
     src: './assets/images/project-images/chick-shooting-game.gif',
+  },
+  'fb-crawl-project': {
+    name: 'fb-crawl-project',
+    src: './assets/images/project-images/fb-crawl-project.jpg',
   },
 
   medium: {

@@ -17,7 +17,7 @@ const skillList = [
       },
       {
         level: 2,
-        skillName: 'Storybook',
+        skillName: 'Vue',
       },
     ],
   },
@@ -43,6 +43,10 @@ const skillList = [
       {
         level: 2,
         skillName: 'GraphQL client',
+      },
+      {
+        level: 2,
+        skillName: 'Storybook',
       },
     ],
   },

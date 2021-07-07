@@ -45,6 +45,14 @@ const projectListData: SingleProjectData[] = [
     },
   },
   {
+    title: '桃園公車App',
+    tag: 'formal',
+    introduction: '接手前輩的公車App專案，此App使用react-native技術，大部分寫法都與react一樣，些許差異大概在一兩週內就大致熟悉了，只是許多函示庫還要重新學習API用法。\n然而最痛苦的是"重構"，花了好幾個月仍然還沒完成...果然程式簡潔很重要啊。',
+    link: 'https://apps.apple.com/tw/app/ibus-%E6%A1%83%E5%9C%92/id589376740',
+    image: allImages['ebus-ty-app'],
+  },
+
+  {
     title: 'Bullet Note',
     tag: 'side-project',
     introduction: '受子彈筆記啟發的筆記WebApp，後端使用Firebase即時資料庫',
@@ -113,6 +121,13 @@ const projectListData: SingleProjectData[] = [
       name: '',
       src: allImages['kabu-prediction'].src,
     },
+  },
+  {
+    title: 'FB貼文爬蟲 + 前端',
+    tag: 'side-project',
+    introduction: '難得有機會深入研究世界級App後端資料格式，找到"還算可以接受的"爬資料的方式(API)，並做成前端頁面方便瀏覽。',
+    link: 'https://ms0223900.github.io/fb-crawled-frontend/',
+    image: allImages['fb-crawl-project'],
   },
 ];
 

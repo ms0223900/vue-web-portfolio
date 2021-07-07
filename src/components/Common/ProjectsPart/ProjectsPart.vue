@@ -34,7 +34,7 @@ import PrevNextButton from './PrevNextButton.vue';
 import BulletList from './BulletList.vue';
 import PartTitle from '../PartTitle.vue';
 
-const allProjects = projects.slice(0, 3);
+const allProjects = projects.filter((p) => p.tag === 'formal');
 
 export default {
   components: {

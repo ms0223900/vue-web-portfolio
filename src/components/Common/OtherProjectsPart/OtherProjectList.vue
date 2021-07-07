@@ -48,7 +48,7 @@ export default {
       // left: -177.5%;
       // left: -207%;
       // left: -119.3%;
-      left: -1484px;
+      left: -1684px;
       // transform: translateX(-66.66%);
     }
   }
