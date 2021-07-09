@@ -19,6 +19,10 @@ const skillList = [
         level: 2,
         skillName: 'Vue',
       },
+      {
+        level: 3,
+        skillName: 'Jest(Unit Test)',
+      },
     ],
   },
   {
@@ -53,6 +57,10 @@ const skillList = [
   {
     skillRealmName: '其他工具/技能',
     skills: [
+      {
+        level: 3, // 0 ~ 4
+        skillName: 'Git',
+      },
       {
         level: 1, // 0 ~ 4
         skillName: 'CI(Drone)',
